@@ -1,0 +1,103 @@
+nav{
+    opacity: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    background-color: #93D6EF;
+    position: fixed;
+    transition: 1s all;
+    padding-top: 10px;
+    width: 100%;
+    box-shadow: 0px 17px 17px 0px rgb(34, 187, 243);
+    height: 140px;
+    z-index: 100;
+    
+}
+
+.logo{
+    grid-area: 1 / 2 / 2 / 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: black;
+    /*text-transform: uppercase;*/
+    /*letter-spacing: 5px;*/
+    font-size: 44px;
+    transition: all 1s;
+    font-weight: bold;
+    
+}
+
+.disclaimer{
+    grid-area: 1 / 1 / 2 / 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*justify-content: space-around;
+    padding-top: 10px;*/
+
+}
+
+.login{
+    grid-area: 1 / 3 / 2 / 4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav li{
+    list-style: none;
+}
+
+.disclaimer, .login a{
+    color: black;
+    text-decoration: none;
+    /*letter-spacing: 3px;*/
+    font-weight: bold;
+    font-size: 24px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+
+#current{
+    color: orange !important;
+}
+
+@media screen and (max-width: 1024px ){
+    nav{
+        height: 120px;
+    }
+
+    .logo{
+        font-size: 36px;
+    }
+}
+
+
+@media screen and (max-width: 760px ){
+    .logo{
+        font-size: 28px;
+    }
+
+}
+
+.nav-active{
+    transform: translate(0%);
+}
+
+nav a:hover, .dropdown:hover .dropbtn .dropcontent{
+    color: orange !important;
+
+}
+
+
+nav a{
+    color: black;
+    text-decoration: none;
+    transition: all 1s;
+}
+

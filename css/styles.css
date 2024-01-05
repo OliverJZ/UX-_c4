@@ -1,0 +1,519 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Inter';
+
+}
+
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+header{
+    padding-top: 140px;
+    width: 100%;
+    margin: 0 auto;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 44px;
+    font-weight: bold;
+    cursor:default;
+
+
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 auto;
+}
+
+.cards{
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+
+
+}
+
+.card{
+    width: 375px;
+    height: 375px;
+    background-color: #E6E6E5;
+    border-radius: 25px;
+    margin-bottom: 30px;
+    box-shadow: 0px 6px 6px 0px rgb(0, 0, 0);
+    
+}
+
+.card h2{
+    margin-top: 30px;
+    font-size: 70px;
+}
+
+.card p{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.mainPageButtons{
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    height: auto;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.mainPageButtons button{
+    background-color: #7684FF;
+    width: 215px;
+    height: 95px;
+    margin: 10px;
+    font-size: 48px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 0px;
+    box-shadow: 5px 5px 6px 3px rgba(0, 0, 0, 0.4);
+    transition: all 0.5s;
+}
+
+.mainPageButtons button:hover{
+    background-color: #93D6EF;
+}
+
+/* dislcaimer body */
+.discBody{
+    margin: auto;
+    width: 80%;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: left;
+    text-align: left;
+
+}
+
+.discBody p{
+    font-size: 25px;
+    margin-top: 15px;
+}
+
+
+
+/* Uploading part */
+
+.defaultCol{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.defaultCol button{
+    width: 245px;
+    height: 55px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 0px;
+    transition: all 0.5s;
+}
+.defaultCol button:hover{
+    background-color: #93D6EF;
+}
+
+/*might cause later problems idk tho xddxdxd*/
+.defaultCol h2{
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.defaultCol p{
+    font-size: 40px;
+}
+
+
+.uploadCard{
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    border-radius: 25px;
+    margin-bottom: 30px;
+    box-shadow: 0px 0px 6px 3px rgb(0, 0, 0);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+}
+
+.uploadCard h2{
+    margin-top: 40px;
+    font-size: 30px;
+}
+
+.uploadCard i{
+    margin-top: 70px;
+    font-size: 130px;
+    background-color: rgb(230, 230, 230);
+    padding: 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.5s;
+
+}
+.uploadCard i:hover{
+
+    background-color: #93D6EF;
+
+}
+
+
+/*edit part*/
+
+.edit{
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    height: auto;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.edit button{
+    background-color: #7684FF;
+    width: 215px;
+    height: 95px;
+    font-size: 48px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 0px;
+    box-shadow: 5px 5px 6px 3px rgba(0, 0, 0, 0.4);
+    transition: all 0.5s;
+}
+
+.edit button:hover{
+    background-color: #93D6EF;
+}
+
+.labels{
+    display: flex;
+    flex-direction: column;
+}
+
+.defaultCol img{
+    width: 40%;
+}
+
+/* checkboxes */
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+  }
+  
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  .container input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  .container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  /* LOGIN */
+
+  .loginDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    width: 580px;
+    height: auto;
+    background-color: #E6E6E5;
+
+    border-radius: 25px;
+    box-shadow: 5px 5px 6px 3px rgba(0, 0, 0, 0.4);
+  }
+
+  .loginDiv h2{
+    margin: 20px;
+    font-size: 40px;
+  }
+
+  .loginDiv label{
+    font-size: 24px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+  .loginDiv input{
+    height: 60px;
+    font-size: 24px;
+    width: 75%;
+    text-align: center;
+  }
+
+  .register{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .register p{
+    font-size: 24px;
+    margin-top: 25px;
+    margin-bottom: -30px;
+    font-weight: bold;
+  }
+
+/*responsivity*/
+
+
+/*tablets in general*/
+@media screen and (max-width: 1024px ){
+    /*index*/
+    .cards{
+        flex-direction: column;
+    }
+
+
+}
+
+
+
+/*phones in general*/
+@media screen and (max-width: 760px ){
+
+    /*index */
+    .mainPageButtons button{
+        width: 120px;
+        height: 50px;
+        margin: 10px;
+        font-size: 25px;
+    }
+
+    .card{
+        width: 250px;
+        height: 250px;
+        border-radius: 25px;
+        margin-bottom: 30px;
+    }
+
+    .card h2{
+        margin-top: 20px;
+        font-size: 50px;
+    }
+    
+    .card p{
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    header{
+        padding-top: 140px;
+        width: 100%;
+        margin: 0 auto;
+        min-height: 250px;
+        font-size: 35px;
+    
+    }
+
+    /*upload page*/
+
+    .uploadCard{
+        width: 250px;
+        height: 250px;
+    }
+    
+    .uploadCard h2{
+        margin-top: 40px;
+        font-size: 25px;
+    }
+    
+    .uploadCard i{
+        margin-top: 30px;
+        font-size: 90px;
+        padding: 20px;
+    
+    }
+
+    /*edit*/
+
+    .edit{
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        height: auto;
+        align-items: center;
+        justify-content: space-evenly;
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+    
+    .edit button{
+        width: 120px;
+        height: 50px;
+        margin: 10px;
+        font-size: 25px;
+    }
+    
+    .edit button:hover{
+        background-color: #93D6EF;
+    }
+    
+    .labels{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .defaultCol img{
+        width: 70%;
+    }
+
+    /*checkbox*/
+    .container {
+        padding-left: 28px;
+        margin-bottom: 12px;
+        font-size: 15px;
+
+      }
+
+
+    /*login*/
+    .loginDiv{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+        width: 80%;
+        height: auto;
+        background-color: #E6E6E5;
+    
+        border-radius: 25px;
+        box-shadow: 5px 5px 6px 3px rgba(0, 0, 0, 0.4);
+      }
+    
+      .loginDiv h2{
+        margin: 20px;
+        font-size: 30px;
+      }
+    
+      .loginDiv label{
+        font-size: 18px;
+        margin-top: 15px;
+        margin-bottom: 5px;
+        font-weight: bold;
+      }
+    
+      .loginDiv input{
+        height: 40px;
+        font-size: 18px;
+        width: 60%;
+        text-align: center;
+      }
+    
+      .register{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    
+      .register p{
+        font-size: 18px;
+        margin-top: 20px;
+        margin-bottom: -35px;
+        font-weight: bold;
+      }
+
+/*??????????????????????????*/
+      .container input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+      }
+}
+
+
+
